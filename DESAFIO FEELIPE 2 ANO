@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Matemática na Prática</title>
-
   <style>
     :root{
       --body-bg: #f2f6fb;
@@ -18,8 +17,18 @@
       font-family: "Arial", sans-serif;
     }
 
-    html,body{height:100%; margin:0; background:var(--body-bg); color:#111;}
-    .container{max-width:var(--max-width); margin:24px auto; padding:16px;}
+    html,body{
+      height:100%;
+      margin:0;
+      background:var(--body-bg);
+      color:#111;
+    }
+
+    .container{
+      max-width:var(--max-width);
+      margin:24px auto;
+      padding:16px;
+    }
 
     header.site-header{
       background:var(--header-bg);
@@ -47,121 +56,18 @@
     .banner .banner-text{flex:1 1 320px;}
     .banner h2{margin:0 0 8px 0; color:var(--accent); font-size:1.6rem;}
     .banner p{margin:0; opacity:0.95;}
-
     .banner .banner-image{width:420px; max-width:45%; min-width:220px; border-radius:10px; overflow:hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.25);}
     .banner .banner-image img{display:block; width:100%; height:auto;}
 
-    section.videos{margin-top:18px; background:var(--videos-bg); color:white; padding:18px; border-radius:12px;}
+    section.videos{
+      margin-top:18px;
+      background:var(--videos-bg);
+      color:white;
+      padding:18px;
+      border-radius:12px;
+    }
     section.videos h3{margin-top:0; color:var(--accent);}
 
     .video-grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:var(--gap); margin-top:12px;}
 
-    .video-card{background:rgba(255,255,255,0.06); padding:10px; border-radius:10px; box-shadow: 0 4px 12px rgba(0,0,0,0.18); display:flex; flex-direction:column; gap:8px;}
-    .video-card h4{margin:0; font-size:1rem;}
-    .video-card p{margin:0; font-size:0.88rem; opacity:0.92;}
-
-    .thumb{
-      width:100%;
-      border-radius:8px;
-      overflow:hidden;
-      display:block;
-    }
-    .thumb img{display:block; width:100%; height:auto;}
-
-    .video-card iframe{width:100%; aspect-ratio: 16/9; border:0; border-radius:8px; background:#000;}
-
-    footer{margin-top:16px; text-align:center; opacity:0.8; font-size:0.9rem;}
-
-    @media (max-width:700px){
-      .banner{ flex-direction:column; }
-      .banner .banner-image{ max-width:100%; width:100%;}
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header class="site-header">
-      <h1>Matemática na Prática</h1>
-      <p>Aulas, dicas e resolução de exercícios em português</p>
-    </header>
-
-    <!-- Banner com thumbnail do vídeo principal (coerente com o primeiro vídeo embed) -->
-    <section class="banner" aria-label="Vídeo principal">
-      <div class="banner-text">
-        <h2>O Melhor Conteúdo de Matemática</h2>
-        <p>Aprenda com explicações claras e exemplos passo a passo. Vídeo principal destacado ao lado.</p>
-      </div>
-
-      <div class="banner-image">
-        <!-- thumbnail correspondente ao primeiro vídeo (id: _JQAN5Tg0Zk) -->
-        <img src="https://img.youtube.com/vi/_JQAN5Tg0Zk/maxresdefault.jpg"
-             alt="Thumbnail do vídeo principal - Khan Academy em Português">
-      </div>
-    </section>
-
-    <section class="videos" aria-label="Vídeos recomendados">
-      <h3>Vídeos Recomendados (em português)</h3>
-
-      <div class="video-grid">
-        <!-- 1 -->
-        <article class="video-card">
-          <h4>Khan Academy — Variáveis, expressões e equações (português)</h4>
-          <p>Explicação passo a passo ideal para fundamentos.</p>
-          <a class="thumb" href="https://www.youtube.com/watch?v=_JQAN5Tg0Zk" target="_blank" rel="noopener">
-            <img src="https://img.youtube.com/vi/_JQAN5Tg0Zk/hqdefault.jpg" alt="Thumbnail Khan Academy">
-          </a>
-          <iframe src="https://www.youtube.com/embed/_JQAN5Tg0Zk" title="Khan Academy em Português" allowfullscreen></iframe>
-        </article>
-
-        <!-- 2 -->
-        <article class="video-card">
-          <h4>Equação do 2º grau em 6 minutos — Método Curió</h4>
-          <p>Aula curta e direta com exemplos práticos.</p>
-          <a class="thumb" href="https://www.youtube.com/watch?v=r-Vuvb18kUk" target="_blank" rel="noopener">
-            <img src="https://img.youtube.com/vi/r-Vuvb18kUk/hqdefault.jpg" alt="Thumbnail Equação do 2º grau 6 minutos">
-          </a>
-          <iframe src="https://www.youtube.com/embed/r-Vuvb18kUk" title="Equação do 2º grau em 6 minutos" allowfullscreen></iframe>
-        </article>
-
-        <!-- 3 -->
-        <article class="video-card">
-          <h4>Professor Ferretto — Bhaskara e soma/produto (ENEM)</h4>
-          <p>Didático, focado em vestibulares e ENEM.</p>
-          <a class="thumb" href="https://www.youtube.com/watch?v=toAaUBwitFE" target="_blank" rel="noopener">
-            <img src="https://img.youtube.com/vi/toAaUBwitFE/hqdefault.jpg" alt="Thumbnail Professor Ferretto Bhaskara">
-          </a>
-          <iframe src="https://www.youtube.com/embed/toAaUBwitFE" title="Professor Ferretto Bhaskara" allowfullscreen></iframe>
-        </article>
-
-        <!-- 4 -->
-        <article class="video-card">
-          <h4>Prof. Marcos Aba — Equação do 2º grau (aula)</h4>
-          <p>Aula passo a passo para 8º/9º ano.</p>
-          <a class="thumb" href="https://www.youtube.com/watch?v=lN5FOOQyjEs" target="_blank" rel="noopener">
-            <img src="https://img.youtube.com/vi/lN5FOOQyjEs/hqdefault.jpg" alt="Thumbnail Prof Marcos Aba">
-          </a>
-          <iframe src="https://www.youtube.com/embed/lN5FOOQyjEs" title="Prof Marcos Aba - Equação do 2º grau" allowfullscreen></iframe>
-        </article>
-
-        <!-- 5 -->
-        <article class="video-card">
-          <h4>Aulão ENEM — Resolução de exercícios e dicas</h4>
-          <p>Revisão de conteúdos recorrentes no ENEM com exemplos práticos.</p>
-          <a class="thumb" href="https://www.youtube.com/watch?v=C-7jMAzDw8g" target="_blank" rel="noopener">
-            <img src="https://img.youtube.com/vi/C-7jMAzDw8g/hqdefault.jpg" alt="Thumbnail Aulão ENEM Matemática">
-          </a>
-          <iframe src="https://www.youtube.com/embed/C-7jMAzDw8g" title="Aulão ENEM Matemática" allowfullscreen></iframe>
-        </article>
-      </div>
-
-      <p style="margin-top:12px; opacity:0.9; font-size:0.9rem;">
-        Dica: para trocar qualquer vídeo basta alterar o <code>src</code> do <code>iframe</code> ou o link da miniatura.
-      </p>
-    </section>
-
-    <footer>
-      Página criada — personalize cores e textos conforme quiser.
-    </footer>
-  </div>
-</body>
-</html>
+    .video-card{background:rgba(255,255,255,0.06); padding:10px; border-radius:10px; box-shadow: 0 4px 12px rgba(0
